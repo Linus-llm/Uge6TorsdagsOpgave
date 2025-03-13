@@ -13,13 +13,13 @@ public class Main {
        rooms.add(myRoom1);
        rooms.add(myRoom2);
        rooms.add(myRoom3);
-       Building myBuilding1 = new Building(rooms,2);//3.i instantiating a new building object with my rooms arrayList
+       Building myBuilding1 = new Building(rooms,4);//3.i instantiating a new building object with my rooms arrayList
        int finalResultLamps = countLampsInBuilding(myBuilding1);
        int finalResultWindows = countWindowsInBuilding(myBuilding1);
        int finalResultRooms = countRoomsInBuilding(myBuilding1);
        boolean resultOfNormal = isNormal(myBuilding1);
 
-        System.out.println("Number of lamps: "+finalResultLamps+" number of windows: "+finalResultWindows+" number of rooms: "+finalResultRooms+" is the building normal?: ");
+        System.out.println("Number of lamps: "+finalResultLamps+" number of windows: "+finalResultWindows+" number of rooms: "+finalResultRooms+" is the building normal?: "+isNormal(myBuilding1));
     }
     //3.j
     public static int countLampsInBuilding(Building x){
